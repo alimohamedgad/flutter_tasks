@@ -3,11 +3,10 @@ import 'package:flutter_task/core/AppColor/app_color.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract class Styles {
-  static TextStyle style14 = TextStyle(
+  static TextStyle style14 = const TextStyle(
     fontSize: 14,
     color: AppColor.gray,
     fontWeight: FontWeight.w300,
-    fontFamily: GoogleFonts.outfit.toString(),
   );
   static TextStyle style16 = const TextStyle(
     fontSize: 16,
