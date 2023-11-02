@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_task/Features/Task2/presentient/view/screens/home/home_view.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'Features/Task2/presentient/view/screens/btm.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      child: const HomeView(),
+      child: const NavBarScreen(),
     );
   }
 }
