@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DotWidget extends StatelessWidget {
   const DotWidget({
@@ -13,8 +14,8 @@ class DotWidget extends StatelessWidget {
         ...List.generate(
           3,
           (index) => Container(
-            height: 10,
-            width: index == 1 ? 45 : 20,
+            height: 10.h,
+            width: index == 1 ? 45.w : 20.w,
             decoration: BoxDecoration(
                 shape: index != 1 ? BoxShape.circle : BoxShape.rectangle,
                 color: index == 1 ? Colors.red : Colors.grey,

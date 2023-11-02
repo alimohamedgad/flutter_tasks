@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/app_Image/app_image.dart';
-import '../../../../core/styles/styles.dart';
+import '../../../../../core/app_Image/app_image.dart';
+import '../../../../../core/styles/styles.dart';
 
 class HeyWithImage extends StatelessWidget {
   const HeyWithImage({
@@ -16,8 +17,8 @@ class HeyWithImage extends StatelessWidget {
         children: [
           Image.asset(
             AppImage.person,
-            width: 32,
-            height: 32,
+            width: 32.w,
+            height: 32.h,
           ),
           Text(
             'Hey, Ahmed',
@@ -25,8 +26,8 @@ class HeyWithImage extends StatelessWidget {
           ),
           Image.asset(
             AppImage.emoji,
-            width: 32,
-            height: 32,
+            width: 32.w,
+            height: 32.h,
           ),
         ],
       ),

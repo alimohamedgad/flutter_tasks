@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/appColor/app_color.dart';
-import '../../../../../core/styles/styles.dart';
+import '../../../../../../core/appColor/app_color.dart';
+import '../../../../../../core/styles/styles.dart';
 
 class CategoryViewSeeAll extends StatelessWidget {
   const CategoryViewSeeAll({

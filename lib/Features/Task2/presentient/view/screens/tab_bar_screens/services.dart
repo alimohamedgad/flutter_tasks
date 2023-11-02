@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/appColor/app_color.dart';
-import '../../../../../core/app_Image/app_image.dart';
-import '../../../../../core/styles/styles.dart';
+import '../../../../../../core/appColor/app_color.dart';
+import '../../../../../../core/app_Image/app_image.dart';
+import '../../../../../../core/styles/styles.dart';
 
 class ServicesTabBar extends StatelessWidget {
   const ServicesTabBar({super.key});

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
-import '../../../data/model/categories_model.dart';
+import 'package:flutter_task/Features/Task2/data/model/users_model.dart';
 
 class CategoryListTile extends StatelessWidget {
-  final CategoriesModel categoriesModel;
+  final UserModel userModel;
   const CategoryListTile({
     Key? key,
-    required this.categoriesModel,
+    required this.userModel,
   }) : super(key: key);
 
   @override
@@ -18,9 +17,9 @@ class CategoryListTile extends StatelessWidget {
       child: ListTile(
         onTap: () {},
         title: Text(
-          categoriesModel.name,
+          userModel.name,
         ),
-        leading: Image.asset(categoriesModel.image),
+        leading: Text(userModel.id.toString()),
         trailing: const Icon(Icons.arrow_right_alt_sharp),
       ),
     );
