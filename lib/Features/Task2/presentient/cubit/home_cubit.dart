@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_task/Features/Task2/data/model/users_model.dart';
 import 'package:flutter_task/Features/Task2/data/repo/users_repository.dart';
-import 'package:flutter_task/Features/Task2/presentient/view/screens/tab_bar_screens/categoryies.dart';
+import 'package:flutter_task/Features/Task2/presentient/view/screens/tab_bar_screens/users.dart';
 
 import '../view/screens/tab_bar_screens/orders.dart';
 import '../view/screens/tab_bar_screens/services.dart';
@@ -29,13 +29,13 @@ class HomeCubit extends Cubit<HomeState> {
 
   // TabBarTitle
   List tabBarTitle = [
-    'Categories',
+    'Users',
     'Services',
     'Orders (0)',
   ];
   // Tab Bar Screen
   List<Widget> screens = [
-    const CategoriesTabBar(),
+    const UsersTabBar(),
     const ServicesTabBar(),
     const OrdersTabBar(),
   ];

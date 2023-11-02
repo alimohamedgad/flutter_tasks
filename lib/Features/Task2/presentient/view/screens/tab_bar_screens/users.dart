@@ -6,14 +6,14 @@ import '../../../cubit/home_cubit.dart';
 import '../../widgets/category_widget/category_list_tile.dart';
 import '../../widgets/category_widget/category_view_see_all.dart';
 
-class CategoriesTabBar extends StatefulWidget {
-  const CategoriesTabBar({super.key});
+class UsersTabBar extends StatefulWidget {
+  const UsersTabBar({super.key});
 
   @override
-  State<CategoriesTabBar> createState() => _CategoriesTabBarState();
+  State<UsersTabBar> createState() => _UsersTabBarState();
 }
 
-class _CategoriesTabBarState extends State<CategoriesTabBar> {
+class _UsersTabBarState extends State<UsersTabBar> {
   @override
   void initState() {
     context.read<HomeCubit>().getUsers();
@@ -30,7 +30,7 @@ class _CategoriesTabBarState extends State<CategoriesTabBar> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CategoryViewSeeAll(),
+              const UsersViewSeeAll(),
               if (state is GetUsersSuccess)
                 ...List.generate(
                   userCubit.users.length,

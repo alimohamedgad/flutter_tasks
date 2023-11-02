@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/appColor/app_color.dart';
 import '../../../../../../core/styles/styles.dart';
 
-class CategoryViewSeeAll extends StatelessWidget {
-  const CategoryViewSeeAll({
+class UsersViewSeeAll extends StatelessWidget {
+  const UsersViewSeeAll({
     super.key,
   });
 
@@ -16,7 +16,7 @@ class CategoryViewSeeAll extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Categories View',
+            'Users View',
             style: Styles.style14
                 .copyWith(fontWeight: FontWeight.w500, color: AppColor.black),
           ),
