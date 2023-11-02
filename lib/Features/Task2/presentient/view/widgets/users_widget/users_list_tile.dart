@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/Features/Task2/data/model/users_model.dart';
 
-class CategoryListTile extends StatelessWidget {
+class UsersListTile extends StatelessWidget {
   final UserModel userModel;
-  const CategoryListTile({
+  const UsersListTile({
     Key? key,
     required this.userModel,
   }) : super(key: key);

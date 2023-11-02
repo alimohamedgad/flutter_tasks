@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../cubit/home_cubit.dart';
-import '../../widgets/category_widget/category_list_tile.dart';
-import '../../widgets/category_widget/category_view_see_all.dart';
+import '../../widgets/users_widget/users_list_tile.dart';
+import '../../widgets/users_widget/users_view_see_all.dart';
 
 class UsersTabBar extends StatefulWidget {
   const UsersTabBar({super.key});
@@ -35,7 +35,7 @@ class _UsersTabBarState extends State<UsersTabBar> {
                 ...List.generate(
                   userCubit.users.length,
                   (index) {
-                    return CategoryListTile(userModel: userCubit.users[index]);
+                    return UsersListTile(userModel: userCubit.users[index]);
                   },
                 )
               else
