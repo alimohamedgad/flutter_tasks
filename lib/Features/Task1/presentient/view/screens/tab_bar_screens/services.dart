@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task/core/app_string/app_string.dart';
 
-import '../../../../../core/appColor/app_color.dart';
-import '../../../../../core/app_Image/app_image.dart';
-import '../../../../../core/styles/styles.dart';
+import '../../../../../../core/appColor/app_color.dart';
+import '../../../../../../core/app_Image/app_image.dart';
+import '../../../../../../core/styles/styles.dart';
 
 class ServicesTabBar extends StatelessWidget {
   const ServicesTabBar({super.key});
@@ -21,12 +22,12 @@ class ServicesTabBar extends StatelessWidget {
             height: 180,
           ),
           Text(
-            'No Services found',
+            AppString.noServiceFound,
             style: Styles.style22,
             textAlign: TextAlign.center,
           ),
           Text(
-            'you can place your needed Services \nto let serve you.',
+            AppString.askWhatAddService,
             textAlign: TextAlign.center,
             style: Styles.style20.copyWith(color: AppColor.gray),
           ),

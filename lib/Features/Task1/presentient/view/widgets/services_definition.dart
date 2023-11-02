@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/styles/styles.dart';
+import '../../../../../core/styles/styles.dart';
 
 class ServicesDefinitionText extends StatelessWidget {
   const ServicesDefinitionText({

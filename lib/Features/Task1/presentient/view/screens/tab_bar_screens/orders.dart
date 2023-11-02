@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task/core/appColor/app_color.dart';
 import 'package:flutter_task/core/app_Image/app_image.dart';
+import 'package:flutter_task/core/app_string/app_string.dart';
 import 'package:flutter_task/core/styles/styles.dart';
 
 class OrdersTabBar extends StatelessWidget {
@@ -20,12 +21,12 @@ class OrdersTabBar extends StatelessWidget {
             height: 180,
           ),
           Text(
-            'No Orders found',
+            AppString.noOrderFound,
             style: Styles.style22,
             textAlign: TextAlign.center,
           ),
           Text(
-            'you can place your needed orders \nto let serve you.',
+            AppString.askWhatAddOrder,
             textAlign: TextAlign.center,
             style: Styles.style20.copyWith(color: AppColor.gray),
           ),
