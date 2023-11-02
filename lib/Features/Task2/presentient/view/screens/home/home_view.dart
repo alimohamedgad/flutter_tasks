@@ -15,8 +15,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) =>
-          HomeCubit(UserRepository(ApiService(Dio())))..getUsers(),
+      create: (context) => HomeCubit(UserRepository(ApiService(Dio()))),
       child: Scaffold(
         backgroundColor: AppColor.scaffold,
         appBar: AppBar(
